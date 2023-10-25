@@ -20,6 +20,8 @@
 .main__login {
   background-color: white;
   padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
   color: black;
 }
 
@@ -33,4 +35,5 @@
 
 .main__caption {
   margin: 0;
+  padding: 30px;
 }
