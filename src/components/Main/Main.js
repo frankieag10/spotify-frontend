@@ -5,21 +5,7 @@ import spotifyicon from "../../images/spotify-icon.svg";
 //import spotify from "../../utils/spotify";
 
 export default function Main({ loggedIn, profileImage }) {
-  const button = loggedIn ? (
-    <a
-      className="main__login"
-      // onClick={() => spotify.logout()}
-    >
-      Logout
-    </a>
-  ) : (
-    <a
-      className="main__login"
-      //onClick={() => spotify.login()}
-    >
-      Login to Spotify
-    </a>
-  );
+  const button = loggedIn ? <a className="main__login">Logout</a> : <a className="main__login">Login to Spotify</a>;
 
   const img = loggedIn && profileImage != "" && profileImage ? profileImage : spotifyicon;
 
