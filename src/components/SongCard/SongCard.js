@@ -14,4 +14,21 @@ export default function SongCards() {
       </p>
     </div>
   );
+  if (!songs.length) {
+    return Preloader();
+  } else {
+    return (
+      <div>
+        <div className={"song-cards " + className}>
+          {(songs.slice(0, visibleSongs) || []).map((song) => (
+            <SongCard
+              key={song.trackId}
+              song={song}
+              selectSong={selectSong}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  }
 }
