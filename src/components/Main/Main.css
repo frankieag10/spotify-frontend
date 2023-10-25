@@ -13,10 +13,6 @@
   padding: 30px;
 }
 
-.main__caption {
-  color: rgb(255, 255, 255);
-}
-
 .main__login {
   background-color: white;
   padding: 10px;
@@ -34,6 +30,7 @@
 }
 
 .main__caption {
+  color: rgb(255, 255, 255);
   font-family: "Cabinet-Grotesk", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 30px;
