@@ -5,6 +5,7 @@ import Preloader from "../Preloader/Preloader";
 import spotify from "../../utils/spotify";
 
 export default function SongCards() {
+  const [songs, setSongs] = useState([]);
   return (
     <div className="error__message-container">
       <p className="error__message">
