@@ -22,6 +22,7 @@ function App() {
         loggedIn={loggedIn}
         profileImage={profileImage}
       />
+      <Footer />
     </div>
   );
 }
