@@ -6,6 +6,8 @@ import spotify from "../../utils/spotify";
 
 export default function SongCards() {
   const [songs, setSongs] = useState([]);
+  const [errorMessage, setErrorMessage] = useState();
+
   return (
     <div className="error__message-container">
       <p className="error__message">
