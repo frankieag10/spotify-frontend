@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import spotifyIcon from "../../images/spotify-icon.svg";
 
 export default function Header({ loggedIn, username }) {
   return (
