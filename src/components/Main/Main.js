@@ -1,6 +1,7 @@
 import React from "react";
 import "./Main.css";
-import musicNote from "../../images/music-note.svg";
+//import musicNote from "../../images/music-note.svg";
+import spotifyicon from "../../images/spotify-icon.svg";
 //import spotify from "../../utils/spotify";
 
 export default function Main({ loggedIn, profileImage }) {
@@ -20,7 +21,7 @@ export default function Main({ loggedIn, profileImage }) {
     </a>
   );
 
-  const img = loggedIn && profileImage != "" && profileImage ? profileImage : musicNote;
+  const img = loggedIn && profileImage != "" && profileImage ? profileImage : spotifyicon;
 
   return (
     <div>
