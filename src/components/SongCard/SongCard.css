@@ -1,0 +1,6 @@
+.song-card {
+  position: relative;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  gap: 15px;
+}
