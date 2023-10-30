@@ -4,18 +4,31 @@ import SongCard from "../SongCard/SongCard";
 import Preloader from "../Preloader/Preloader";
 import spotify from "../../utils/spotify";
 
-export default function SongCards() {
+export default function SongCards({ className, api, selectSong, visibleSongs, showMore }) {
   const [songs, setSongs] = useState([]);
-  const [errorMessage, setErrorMessage] = useState();
 
-  return (
-    <div className="error__message-container">
-      <p className="error__message">
-        An error occurred while processing your request. This could be due to a connectivity problem or server unavailability. please try again thank
-        you.
-      </p>
-    </div>
-  );
+  useEffect(() => {
+    const fetchSongs = async () => {
+      try {
+        const songs = await spotify[api]();
+        setSongs(songs || []);
+      } catch (error) {
+        setErrorMessage(error.message);
+      }
+    };
+    fetchSongs();
+  }, [api]);
+
+  if (errorMessage) {
+    return (
+      <div className="error__message-container">
+        <p className="error__message">
+          an error occurred while processing your request. This could be due to a connectivity problem or server unavailability. Please try again.
+        </p>
+      </div>
+    );
+  }
+
   if (!songs.length) {
     return Preloader();
   } else {
@@ -24,11 +37,24 @@ export default function SongCards() {
         <div className={"song-cards " + className}>
           {(songs.slice(0, visibleSongs) || []).map((song) => (
             <SongCard
-              key={song.trackId}
+              key={song.trackId_}
               song={song}
-              selectSong={selectSong}
+              selectSong={selectSongs}
             />
           ))}
+        </div>
+        <div className="songs__show-more-container">
+          {visibleSongs < 10 ? (
+            <button
+              type="button"
+              className="songs__show-more-button"
+              onClick={showMore}
+            >
+              Show More...
+            </button>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     );
