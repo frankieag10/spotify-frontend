@@ -8,7 +8,7 @@ import SongModal from "../SongModal/SongModal";
 import Header from "../Header/Header";
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
   const [username, setUserName] = useState("");
   const [activeModal, setActiveModal] = useState(null);
 

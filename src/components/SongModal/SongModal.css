@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Cabinet-Grotesk", Arial, Helvetica, sans-serif;
   src:
-    url("../../vendor/fonts/CabinetGrotesk-Bold.woff") format("woff"),
-    url("../../vendor/fonts/CabinetGrotesk-Bold.woff2") format("woff2");
+    url("../../vendor/CabinetGrotesk-Black.woff") format("woff"),
+    url("../../vendor/CabinetGrotesk-Bold.woff2") format("woff2");
 }
 .modal {
   display: flex;
