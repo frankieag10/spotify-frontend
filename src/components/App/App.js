@@ -22,6 +22,29 @@ function App() {
     setActiveModal(null);
   };
 
+  // Close modal popup with Escape key
+  useEffect(() => {
+    const closeByEscape = (e) => {
+      if (e.key === "Escape") {
+        handleCloseModal();
+      }
+    };
+
+    document.addEventListener("keydown", closeByEscape);
+
+    return () => document.removeEventListener("keydown", closeByEscape);
+  }, []);
+  // Close modal popup with OutsideClick
+  useEffect(() => {
+    const closeByOutsideClick = (e) => {
+      if (e.target.classList.contains("modal")) {
+        handleCloseModal();
+      }
+    };
+    document.addEventListener("mousedown", closeByOutsideClick);
+    return () => document.removeEventListener("mousedown", closeByOutsideClick);
+  }, []);
+
   return (
     <div className="App">
       <Header
