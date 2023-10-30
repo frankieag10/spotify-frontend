@@ -11,7 +11,6 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [username, setUserName] = useState("");
   const [activeModal, setActiveModal] = useState(null);
-
   const [profileImage, setProfileImage] = useState("");
 
   const selectSong = (song) => {

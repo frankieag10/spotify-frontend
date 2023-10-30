@@ -13,7 +13,7 @@ export default function SongCard(song, selectSong) {
         alt={song.image}
       />
       <div className="song-card__name-container">
-        <p className="song-card__name"></p>
+        <p className="song-card__name">{song.name}</p>
       </div>
     </div>
   );

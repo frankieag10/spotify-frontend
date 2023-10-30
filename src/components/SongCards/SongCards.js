@@ -37,7 +37,7 @@ export default function SongCards({ className, api, selectSong, visibleSongs, sh
         <div className={"song-cards " + className}>
           {(songs.slice(0, visibleSongs) || []).map((song) => (
             <SongCard
-              key={song.trackId}
+              key={song.name}
               song={song}
               selectSong={selectSong}
             />
