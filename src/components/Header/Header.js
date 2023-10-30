@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import spotifyIcon from "../../images/spotify-icon.svg";
+import Navigation from "../Navigation/Navigation";
 
 export default function Header({ loggedIn, username }) {
   return (
@@ -14,6 +15,10 @@ export default function Header({ loggedIn, username }) {
           alt="spotify icon"
         />
       </a>
+      <Navigation
+        loggedIn={loggedIn}
+        username={username}
+      />
     </header>
   );
 }
