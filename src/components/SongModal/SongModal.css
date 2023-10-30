@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Cabinet-Grotesk", Arial, Helvetica, sans-serif;
+  src:
+    url("../../vendor/fonts/CabinetGrotesk-Bold.woff") format("woff"),
+    url("../../vendor/fonts/CabinetGrotesk-Bold.woff2") format("woff2");
+}
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 19px;
+  transition:
+    visibility 0s linear 0.5s,
+    opacity 0.5s linear;
+}
+
+.modal__container {
+  width: auto;
+  height: auto;
+  background: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
