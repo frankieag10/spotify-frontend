@@ -4,7 +4,8 @@ import "./App.css";
 import { Route, HashRouter, Switch } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Main from "../Main/Main";
-import Recomended from "../Recommended/Recommended";
+import Recommended from "../Recommended/Recommended";
+import TopSongs from "../TopSongs/TopSongs";
 import SongModal from "../SongModal/SongModal";
 import Header from "../Header/Header";
 
@@ -13,6 +14,11 @@ function App() {
   const [username, setUserName] = useState("");
   const [activeModal, setActiveModal] = useState(null);
   const [profileImage, setProfileImage] = useState("");
+  const [visibleSongs, setVisibleSongs] = useState(3);
+
+  const showMore = () => {
+    setVisibleSongs((prevVisibleSongs) => prevVisibleSongs + 3);
+  };
 
   const selectSong = (song) => {
     setActiveModal(song);
@@ -54,6 +60,18 @@ function App() {
       <Main
         loggedIn={loggedIn}
         profileImage={profileImage}
+      />
+      <TopSongs
+        selectSong={selectSong}
+        onClick={() => setVisibleSongs((prevVisibleSongs) => prevVisibleSongs + 3)}
+        visibleSongs={visibleSongs}
+        showMore={showMore}
+      />
+      <Recommended
+        selectSong={selectSong}
+        onClick={() => setVisibleSongs((prevVisibleSongs) => prevVisibleSongs + 3)}
+        visibleSongs={visibleSongs}
+        showMore={showMore}
       />
       <Footer />
       {activeModal ? (
