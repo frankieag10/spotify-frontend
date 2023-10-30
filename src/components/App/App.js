@@ -4,6 +4,7 @@ import "./App.css";
 import { Route, HashRouter, Switch } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Main from "../Main/Main";
+import Recomended from "../Recommended/Recommended";
 import SongModal from "../SongModal/SongModal";
 import Header from "../Header/Header";
 
