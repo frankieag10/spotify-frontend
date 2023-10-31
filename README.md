@@ -16,6 +16,8 @@ test email spotifytesting004@gmail.com
 
 test password testing0000
 
+reviewers test email (my_insanity@inbox.ru)
+
 CLICK TO GO LIVE --> (https://spotify-frontend-8id5unjxj-franks-projects-e01932b7.vercel.app)
 
 # Getting Started with Create React App
