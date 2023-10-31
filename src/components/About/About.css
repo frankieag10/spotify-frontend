@@ -23,4 +23,5 @@
   font-family: "Cabinet-Grotesk", Arial, Helvetica, sans-serif;
   line-height: 1.2;
   width: 700px;
+  max-width: 200px;
 }
