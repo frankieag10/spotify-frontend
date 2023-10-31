@@ -16,13 +16,13 @@ export default function Navigation({ loggedIn, username }) {
             to="/top-songs"
             className="navbar__link"
           >
-            Top 12 Tracks
+            Your Top Tracks
           </Link>
           <Link
             to="/top-10-recommend"
             className="navbar__link"
           >
-            Top 12 Recommended
+            Top Recommended
           </Link>
         </div>
       </nav>
