@@ -100,14 +100,8 @@ class Spotify {
   }
 
   // Get the profile for the logged in user
-  /*async profile() {
-    return this.get("me");
-  }*/
-
   async profile() {
-    const profile = await this.get("me");
-    console.log("Profile:", profile); //console
-    return profile;
+    return this.get("me");
   }
 
   async getAccessToken() {
