@@ -36,9 +36,7 @@ class Spotify {
     this.loggedIn = value;
     this.onLogIn(value);
   }
-  onLogIn(value) {
-    console.log("Logged in:", value); //console
-  }
+  onLogIn(value) {}
 
   async login() {
     if (this.token) {
@@ -77,7 +75,6 @@ class Spotify {
   // Get the top tracks for the logged in user
   async topTracks() {
     const res = await this.get("me/top/tracks");
-    console.log("Top tracks response:", res); //console
     return res?.items?.map((track) => {
       return {
         name: track.name,

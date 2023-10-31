@@ -12,10 +12,9 @@ export default function SongCards({ className, api, selectSong, visibleSongs, sh
     const fetchSongs = async () => {
       try {
         const songs = await spotify[api]();
-        console.log("Fetched songs:", songs); // console
+
         setSongs(songs || []);
       } catch (error) {
-        console.error("Error fetching songs:", error); // console
         setErrorMessage(error.message);
       }
     };
@@ -23,7 +22,6 @@ export default function SongCards({ className, api, selectSong, visibleSongs, sh
   }, [api]);
 
   if (errorMessage) {
-    console.error("Error message:", errorMessage); // console
     return (
       <div className="error__message-container">
         <p className="error__message">
@@ -34,10 +32,8 @@ export default function SongCards({ className, api, selectSong, visibleSongs, sh
   }
 
   if (!songs.length) {
-    console.log("No songs available."); //console
     return Preloader();
   } else {
-    console.log("Songs available:", songs); //console
     return (
       <div>
         <div className={"song-cards " + className}>
