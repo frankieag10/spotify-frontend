@@ -44,7 +44,7 @@ function App() {
     setActiveModal(null);
   };
 
-  // Close modal popup with Escape key
+  // Close modal with Escape key
   useEffect(() => {
     const closeByEscape = (e) => {
       if (e.key === "Escape") {
