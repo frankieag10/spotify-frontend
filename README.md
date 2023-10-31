@@ -14,7 +14,7 @@ test email spotifytesting004@gmail.com
 
 test password testing0000
 
-CLICK TO GO LIVE --> (spotify-frontend-three.vercel.app)
+CLICK TO GO LIVE --> (https://spotify-frontend-three.vercel.app)
 
 # Getting Started with Create React App
 
