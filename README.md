@@ -8,6 +8,10 @@ User-Friendly Login: Access the app effortlessly by logging in with your Spotify
 Top 12 Tracks: Explore your personal music taste with a display of your most-played tracks.
 Recommended Songs: Get personalized recommendations based on your favorite tracks and music preferences.
 
+# click below to view the project LIVE
+
+https://spotify-frontend-three.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
