@@ -8,7 +8,6 @@ export default function Main({ loggedIn, profileImage }) {
   const button = loggedIn ? (
     <a
       className="main__login"
-      href="#"
       onClick={() => spotify.logout()}
     >
       Logout
@@ -16,7 +15,6 @@ export default function Main({ loggedIn, profileImage }) {
   ) : (
     <a
       className="main__login"
-      href="#"
       onClick={() => spotify.login()}
     >
       Login to Spotify
