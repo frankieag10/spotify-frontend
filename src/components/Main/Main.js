@@ -1,5 +1,6 @@
 import React from "react";
 import "./Main.css";
+import "normalize.css";
 import spotifyicon from "../../images/spotify-icon.svg";
 import spotify from "../utils/spotify";
 
