@@ -18,3 +18,29 @@
   margin: 0;
   padding: 20px;
 }
+
+.songs__show-more-button {
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px;
+  color: #000000;
+  font-weight: 200;
+  font-style: normal;
+  font-family: "Cabinet-Grotesk", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.songs__show-more-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.error__message {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}

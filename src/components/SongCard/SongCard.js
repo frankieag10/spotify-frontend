@@ -1,7 +1,7 @@
 import React from "react";
 import "./SongCard.css";
 
-export default function SongCard(song, selectSong) {
+export default function SongCard({ song, selectSong }) {
   return (
     <div
       className="song-card"
