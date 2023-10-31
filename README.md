@@ -10,6 +10,8 @@ Recommended Songs: Get personalized recommendations based on your favorite track
 
 # click below to view the project LIVE
 
+-use email and password for testing
+
 test email spotifytesting004@gmail.com
 
 test password testing0000
