@@ -11,9 +11,10 @@ Recommended Songs: Get personalized recommendations based on your favorite track
 # click below to view the project LIVE
 
 test email spotifytesting004@gmail.com
+
 test password testing0000
 
-https://spotify-frontend-git-main-franks-projects-e01932b7.vercel.app/
+CLICK TO GO LIVE --> (spotify-frontend-three.vercel.app)
 
 # Getting Started with Create React App
 
