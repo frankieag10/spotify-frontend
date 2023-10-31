@@ -1,8 +1,8 @@
-##Project Overview:
+#Project Overview:
 
 This project provides a seamless login experience to your Spotify account and offers two exciting features: showcasing your Top 12 Tracks and recommending the Top 12 Songs based on your listening history.
 
-##Spotify App Features:
+#Spotify App Features:
 
 User-Friendly Login: Access the app effortlessly by logging in with your Spotify account.
 Top 12 Tracks: Explore your personal music taste with a display of your most-played tracks.
