@@ -1,13 +1,28 @@
 import React from "react";
 import "./Main.css";
-//import musicNote from "../../images/music-note.svg";
 import spotifyicon from "../../images/spotify-icon.svg";
-//import spotify from "../../utils/spotify";
+import spotify from "../utils/spotify";
 
 export default function Main({ loggedIn, profileImage }) {
-  const button = loggedIn ? <a className="main__login">Logout</a> : <a className="main__login">Login to Spotify</a>;
+  const button = loggedIn ? (
+    <a
+      className="main__login"
+      href="#"
+      onClick={() => spotify.logout()}
+    >
+      Logout
+    </a>
+  ) : (
+    <a
+      className="main__login"
+      href="#"
+      onClick={() => spotify.login()}
+    >
+      Login to Spotify
+    </a>
+  );
 
-  const img = loggedIn && profileImage != "" && profileImage ? profileImage : spotifyicon;
+  const img = loggedIn && profileImage !== "" && profileImage ? profileImage : spotifyicon;
 
   return (
     <div>
