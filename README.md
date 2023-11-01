@@ -12,7 +12,7 @@ Recommended Songs: Get personalized recommendations based on your favorite track
 
 -use email and password for testing
 
-test email spotifytesting004@gmail.com
+test email spotifytest4@yahoo.com
 
 test password testing0000
 

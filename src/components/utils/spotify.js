@@ -1,4 +1,5 @@
-const CLIENT_ID = "ae0e690257e84280835e3efc4e0b7862";
+//const CLIENT_ID = "ae0e690257e84280835e3efc4e0b7862";
+const CLIENT_ID = "2de9d9fb189449548329204f23352a3c";
 const REDIRECT_URL = window.location.origin;
 const SPOTIFY_URL = "https://api.spotify.com/v1/";
 const SCOPE = "user-read-private user-read-email user-top-read";
