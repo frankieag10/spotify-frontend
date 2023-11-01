@@ -18,7 +18,7 @@ test password testing0000
 
 reviewers test email (my_insanity@inbox.ru)
 
-CLICK TO GO LIVE --> (https://spotify-frontend-5g9wp8sp2-franks-projects-e01932b7.vercel.app)
+CLICK TO GO LIVE --> (https://spotify-frontend-git-api-stage-franks-projects-e01932b7.vercel.app/)
 
 # Getting Started with Create React App
 
