@@ -78,6 +78,7 @@ class Spotify {
   // Get the top tracks for the logged in user
   async topTracks() {
     const res = await this.get("me/top/tracks");
+    console.log("Fetching top tracks:", res); // console.logs
     return res?.items?.map((track) => {
       return {
         name: track.name,
