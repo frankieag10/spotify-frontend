@@ -16,7 +16,7 @@ export default function Navigation({ loggedIn, username }) {
             to="/top-songs"
             className="navbar__link"
           >
-            Your Top Tracks
+            Top Tracks
           </Link>
           <Link
             to="/top-10-recommend"
