@@ -26,6 +26,12 @@
   width: 700px;
 }
 
+@media screen and (min-width: 426px) and (max-width: 739px) {
+  .about__info {
+    max-width: 200px;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .about__info {
     max-width: 200px;

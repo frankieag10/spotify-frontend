@@ -11,9 +11,15 @@
   transition: 0.35s;
 }
 
+@media screen and (max-width: 425px) {
+  .navbar__link {
+    font-size: 18px;
+  }
+}
+
 @media screen and (min-width: 335px) and (max-width: 550px) {
   .navbar__link {
-    font-size: 12px;
+    font-size: 14px;
     padding: 5px;
   }
   .navbar__container {
@@ -24,7 +30,7 @@
 
 @media screen and (max-width: 334px) {
   .navbar__link {
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px;
   }
 }

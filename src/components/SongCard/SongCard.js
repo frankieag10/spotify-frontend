@@ -12,9 +12,9 @@ export default function SongCard({ song, selectSong }) {
         src={song.image}
         alt={song.image}
       />
-      <div className="song-card__name-container">
+      <section className="song-card__name-container">
         <p className="song-card__name">{song.name}</p>
-      </div>
+      </section>
     </div>
   );
 }
