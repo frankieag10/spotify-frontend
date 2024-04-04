@@ -21,12 +21,14 @@ class Spotify {
     if (token) {
       this.token = token;
       this.setLogin(true);
+      console.log("Token found in local storage:", this.token); // console.log
     } else {
       // If not, check authorization code
       // we can use to get a token when we login
       const params = new URLSearchParams(window.location.search);
       this.code = params.get("code");
       this.setLogin(!!this.code);
+      console.log("Authorization code found:", this.code); // console.log
       if (!!this.code) {
         await this.getAccessToken();
       }
@@ -76,6 +78,7 @@ class Spotify {
   // Get the top tracks for the logged in user
   async topTracks() {
     const res = await this.get("me/top/tracks");
+    console.log("Fetching top tracks:", res); // console.logs
     return res?.items?.map((track) => {
       return {
         name: track.name,
@@ -137,6 +140,7 @@ class Spotify {
     }, 100);
 
     this.gettingToken = false;
+    console.log("Access token obtained:", access_token); // console.log
 
     return access_token;
   }
@@ -154,6 +158,8 @@ class Spotify {
     params.append("scope", SCOPE);
     params.append("code_challenge_method", "S256");
     params.append("code_challenge", challenge);
+
+    console.log("Redirecting to Spotify authorization:", params.toString()); // console.log
 
     document.location = `https://accounts.spotify.com/authorize?${params.toString()}`;
   }

@@ -16,7 +16,11 @@ export default function Navigation({ loggedIn, username }) {
             to="/top-songs"
             className="navbar__link"
           >
+<<<<<<< HEAD
             Your Top Tracks
+=======
+            Top Tracks
+>>>>>>> api-stage
           </Link>
           <Link
             to="/top-10-recommend"

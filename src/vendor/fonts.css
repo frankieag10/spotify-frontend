@@ -4,7 +4,7 @@
   font-weight: 700;
   font-display: swap;
   src:
-    url("./fonts/CabinetGrotesk-Bold.woff") format("woff"),
+    url("./fonts/CabinetGrotesk-Black.woff") format("woff"),
     url("./fonts/CabinetGrotesk-Bold.woff2") format("woff2");
 }
 

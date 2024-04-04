@@ -12,15 +12,26 @@ Recommended Songs: Get personalized recommendations based on your favorite track
 
 -use email and password for testing
 
-test email spotifytesting004@gmail.com
+test email spotifytest4@yahoo.com
 
 test password testing0000
 
+<<<<<<< HEAD
 CLICK TO GO LIVE --> (https://spotify-frontend-ctuiw6qng-franks-projects-e01932b7.vercel.app/)
 
 # Getting Started with Create React App
 
 test
+=======
+reviewers test email (my_insanity@inbox.ru)
+
+CLICK TO GO LIVE --> (https://spotify-frontend-f72xcfecg-franks-projects-e01932b7.vercel.app/)
+
+# Getting Started with Create React App
+
+testting
+testing
+>>>>>>> api-stage
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
