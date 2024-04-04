@@ -11,29 +11,22 @@
   transition: 0.35s;
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 335px) and (max-width: 550px) {
-=======
-@media screen and (max-width: 390px) {
->>>>>>> api-stage
   .navbar__link {
-    font-size: 12px;
     padding: 5px;
   }
-<<<<<<< HEAD
-=======
-}
 
-@media screen and (min-width: 335px) and (max-width: 550px) {
-  .navbar__link {
-    padding: 5px;
-  }
->>>>>>> api-stage
   .navbar__container {
     display: flex;
     align-items: center;
   }
-<<<<<<< HEAD
+}
+
+@media screen and (max-width: 390px) {
+  .navbar__link {
+    font-size: 12px;
+    padding: 5px;
+  }
 }
 
 @media screen and (max-width: 334px) {
@@ -41,6 +34,4 @@
     font-size: 6px;
     padding: 5px;
   }
-=======
->>>>>>> api-stage
 }
